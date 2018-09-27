@@ -6,10 +6,18 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
+    if (message.content === 'P!ping') {
     	message.reply('pong');
   	}
 });
+});
+
+client.on('message', message => {
+    if (message.content === 'P!Autor') {
+    	message.reply('Autorem Jest FokusFokuszewski');
+  	}
+});
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
